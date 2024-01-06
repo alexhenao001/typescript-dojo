@@ -12,3 +12,15 @@ In this note guide, there will be some basic notes on Typsecript
 | string  | Text Data. Enclosed in single or double quotes |
 | any  | Supports "any" datatype assignment |
 | Others...  | see details at www.typescript.org |
+
+
+## Examples
+```javascript
+let found: boolean = true;
+
+let grade: number = 88.6;
+
+let firstName: string = "Alex"
+
+let lastName: string = 'Henao'
+```
