@@ -36,5 +36,18 @@ grade = "A";
 firstName = false;
 lastname = 2999
 ```
+<br><br>
+## Type: any
+* Use the any type for generics
+* Use also for arrays or lists with different data types <br><br>
+### Example
+```javascript
+let myData: any = 50.0;
+
+// the above variable can be assigned different values without compilation error
+myData = false;
+myData = 'Alex';
+myData = 20;
+```
 
 
