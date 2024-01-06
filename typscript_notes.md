@@ -14,9 +14,9 @@ In this note guide, there will be some basic notes on Typsecript
 
 <br><br>
 ## Typescript: "let" keyword
-* Use **"let"** keyword for variable declarations instead of traditional JavaScript "var" <br><br>
-* The Javascript **"var"** has issues with scoping, capturing, shadowing, etc. <br><br>
-* The Typescript **"let"** keyword will eliminate the mentioned issues <br><br>
+* Use **"let"** keyword for variable declarations instead of traditional JavaScript "var"
+* The Javascript **"var"** has issues with scoping, capturing, shadowing, etc.
+* The Typescript **"let"** keyword will eliminate the mentioned issues
 <br><br>
 ## TypeScript is Strongly Typed
 ### Examples
@@ -39,7 +39,8 @@ lastname = 2999
 <br><br>
 ## Type: any
 * Use the any type for generics
-* Use also for arrays or lists with different data types <br><br>
+* Use also for arrays or lists with different data types
+* Be careful as you will LOSE **type-saftey**
 ### Example
 ```javascript
 let myData: any = 50.0;
