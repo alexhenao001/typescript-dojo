@@ -33,6 +33,8 @@ let lastName: string = 'Henao'
 
 found = 0;
 grade = "A";
+firstName = false;
+lastname = 2999
 ```
 
 
