@@ -2,7 +2,7 @@
 
 In this note guide, there will be some basic notes on Typsecript
 
-
+<br><br>
 ## Basic Types
 
 | Type        | Description |
@@ -13,7 +13,7 @@ In this note guide, there will be some basic notes on Typsecript
 | any  | Supports "any" datatype assignment |
 | Others...  | see details at www.typescript.org |
 
-
+<br><br>
 ## Examples
 ```javascript
 let found: boolean = true;
@@ -24,3 +24,8 @@ let firstName: string = "Alex"
 
 let lastName: string = 'Henao'
 ```
+<br><br>
+## Typescript: "let" keyword
+* Use **"let"** keyword for variable declarations instead of traditional JavaScript "var" <br><br>
+* The Javascript **"var"** has issues with scoping, capturing, shadowing, etc. <br><br>
+* The Typescript **"let"** keyword will eliminate the mentioned issues <br>
