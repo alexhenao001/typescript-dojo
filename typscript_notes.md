@@ -50,5 +50,28 @@ myData = false;
 myData = 'Alex';
 myData = 20;
 ```
+## Displaying Output
+#### File: sample-type.ts
+```javascript
+let found: boolean = true;
+let grade: number = 88.6;
+let firstName: string = "Alex"
+let lastName: string = 'Henao"
+
+console.log(found);
+console.log("The grade is " + grade);
+console.log("Hi "  + firstName + " " + lastName);
+```
+
+## Template Strings
+* Reduce clunky string concatenations with template strings
+
+``` javascript
+let firstName: string = "Alex";
+let lastName: string = "Henao";
+
+console.log(`Hi ${firstName} ${lastName}`);  
+```
+
 
 
