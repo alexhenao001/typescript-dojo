@@ -28,5 +28,7 @@ var Customer = /** @class */ (function () {
 }());
 //create an instance
 var myCustomer2 = new Customer("Alex", "Henao");
+myCustomer2.firstName = "Alex";
+myCustomer2.lastName = "Henao";
 console.log("myCustomer.firstName: " + myCustomer2.firstName);
 console.log("myCustomer.lastName: " + myCustomer2.lastName);
