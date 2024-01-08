@@ -168,14 +168,36 @@ export class Circle exends Shape {
     }
 }
 ```
+
+
+### File: Rectangle.ts
+```javascript
+import { Shape } from `./Shape`;
+
+export class Rectangle extends Shape {
+
+    constructor(theX: number, theY: number, private _width: number, private _length: number) {
+        super(theX, theY);
+    }
+
+    // get/set accessors ..
+    getInfo(): string {
+        return super.getInfo() + `, width=${this._width}, length=${this.length}`;
+    }
+}
+```
 ### File: Driver.ts
 ```javascript
 import { Shape } from `./Shape`;
-import {Circle } from `./Circle`;
+import { Circle } from `./Circle`;
+import { Rectangle } from `./Rectangl`;
 
 let myShape = new Shape(10, 15);
 console.log(myShape.getInfo());
 
 let myCircle = new Circle(5, 10, 20);
 console.log(myCircle.getInfo());
+
+let myRectangle = new Rectangle(0, 0, 3, 7);
+console.log(myRectangle.getInfo());
 ```
