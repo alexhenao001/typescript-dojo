@@ -12,12 +12,12 @@ In this note guide, there will be some basic notes on Typsecript
 | any  | Supports "any" datatype assignment |
 | Others...  | see details at www.typescript.org |
 
-<br><br>
+
 ## Typescript: "let" keyword
 * Use **"let"** keyword for variable declarations instead of traditional JavaScript "var"
 * The Javascript **"var"** has issues with scoping, capturing, shadowing, etc.
 * The Typescript **"let"** keyword will eliminate the mentioned issues
-<br><br>
+
 ## TypeScript is Strongly Typed
 ### Examples
 ```javascript
@@ -36,7 +36,7 @@ grade = "A";
 firstName = false;
 lastname = 2999
 ```
-<br><br>
+
 ## Type: any
 * Use the any type for generics
 * Use also for arrays or lists with different data types
