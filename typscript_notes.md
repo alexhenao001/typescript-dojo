@@ -78,6 +78,7 @@ console.log(`Hi ${firstName} ${lastName}`);
 * Must set a compiler flag in order to compile the code
 * See Customer.ts for an example
 
+### TSC command with ES5 support
 ```
     tsc --target ES5 --noEmitOnError Customer.ts
 ```
