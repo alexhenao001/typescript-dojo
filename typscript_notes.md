@@ -124,5 +124,16 @@ tsc --target ES5 --noEmitOnError Customer.ts
 tsc --init
 ```
 
+## Modules
+* Import a class to use it in a driver file
+
+### Use this to import the class class
+* Omit file extension
+* i.e. - File name: Customer.js
+
+```javascript
+import { Customer } from "./Customer";
+```
+
 
 
