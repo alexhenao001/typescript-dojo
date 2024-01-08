@@ -78,9 +78,41 @@ console.log(`Hi ${firstName} ${lastName}`);
 * Must set a compiler flag in order to compile the code
 * See Customer.ts for an example
 
+```javascript
+class Customer {
+
+
+    constructor(private _firstName: string, private _lastName: string) {
+    }
+
+    get firstName(): string {
+        return this._firstName;
+    }
+
+    get lastName(): string {
+        return this._lastName;
+    }
+
+    set firstName(value: string) {
+        this._firstName = value;
+    }
+
+    set lastName(value: string) {
+        this._lastName = value;
+    }
+
+}
+
+//create an instance
+let myCustomer2 = new Customer("Alex", "Henao");
+
+console.log("myCustomer.firstName: " + myCustomer2.firstName);
+console.log("myCustomer.lastName: " + myCustomer2.lastName);
+```
+
 ### TSC command with ES5 support
 ```
-    tsc --target ES5 --noEmitOnError Customer.ts
+tsc --target ES5 --noEmitOnError Customer.ts
 ```
 
 ## Create Config file for compilation
@@ -89,8 +121,7 @@ console.log(`Hi ${firstName} ${lastName}`);
 
 ### Generate a configuration file for compilation
 ```
-    // Generate tsconfig.json file
-    tsc --init
+tsc --init
 ```
 
 
