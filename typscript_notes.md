@@ -73,5 +73,14 @@ let lastName: string = "Henao";
 console.log(`Hi ${firstName} ${lastName}`);  
 ```
 
+## Compiler Flag
+* The get/set accessors is only supported in ES5 and higher
+* Must set a compiler flag in order to compile the code
+* See Customer.ts for an example
+
+```
+    tsc --target ES5 --noEmitOnError Customer.ts
+```
+
 
 
