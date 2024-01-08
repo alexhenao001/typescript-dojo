@@ -152,7 +152,7 @@ export class Shape {
     }
 }
 ```
-### Subclass - Circle.ts
+### File: Circle.ts
 ```javascript
 import { Shape } from `./Shape`
 
