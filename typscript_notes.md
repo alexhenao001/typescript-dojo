@@ -135,5 +135,47 @@ tsc --init
 import { Customer } from "./Customer";
 ```
 
+## Inheritance
+* Typescript only supports single inheritance
+  * You can implement multiple interfaces
+* Define common properties and methods in the superclass as in other OOP languages
 
+### File: Shape.ts
+```javascript
+export class Shape {
 
+    constructor(private _x: number, private _y: number) {
+       // get/set accessors
+       getInfo() : string {
+        return `x=${this._x}, y=${this._y}`;
+       }  
+    }
+}
+```
+### Subclass - Circle.ts
+```javascript
+import { Shape } from `./Shape`
+
+export class Circle exends Shape {
+    constructor(theX: number, theY: number, private _radius: number) {
+        super(theX, theY);
+    }
+
+    // get/set accessors
+
+    getInfo(): string {
+        return super.getInfo() + `, radius=${this._radius`;
+    }
+}
+```
+### File: Driver.ts
+```javascript
+import { Shape } from `./Shape`;
+import {Circle } from `./Circle`;
+
+let myShape = new Shape(10, 15);
+console.log(myShape.getInfo());
+
+let myCircle = new Circle(5, 10, 20);
+console.log(myCircle.getInfo());
+```
