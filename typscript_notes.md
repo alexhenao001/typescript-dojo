@@ -83,5 +83,15 @@ console.log(`Hi ${firstName} ${lastName}`);
     tsc --target ES5 --noEmitOnError Customer.ts
 ```
 
+## Create Config file for compilation
+* Generate a tsconfig.json file with following command
+* Uncomment the configuration properties that are to be updated
+
+### Generate a configuration file for compilation
+```
+    // Generate tsconfig.json file
+    tsc --init
+```
+
 
 
