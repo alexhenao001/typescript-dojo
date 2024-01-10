@@ -201,3 +201,36 @@ console.log(myCircle.getInfo());
 let myRectangle = new Rectangle(0, 0, 3, 7);
 console.log(myRectangle.getInfo());
 ```
+
+## Abstract Class
+* Add abstract keyword to a class
+* Add abstract keyword to a method
+
+### Abstact class example:
+
+```javascript
+export abstract class Shape {
+
+    constructor(private _x: number, private _y: number) {
+    }
+
+    public get x(): number {
+        return this._x;
+    }
+    public set x(value: number) {
+        this._x = value;
+    }
+    public get y(): number {
+        return this._y;
+    }
+    public set y(value: number) {
+        this._y = value;
+    }
+
+    getInfo(): string {
+        return `x=${this._x}, y=${this._y}`;
+    }
+    
+    abstract calculateArea(): number;
+}
+```
