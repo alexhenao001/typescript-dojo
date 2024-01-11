@@ -234,3 +234,25 @@ export abstract class Shape {
     abstract calculateArea(): number;
 }
 ```
+
+## Interfaces
+* Add the interface keyword
+* Implementing classes add implements keyword
+
+### Coach interface
+```javascript
+export interface Coach {
+    getDailyWorkout(): string; 
+}
+```
+
+### Implementing Class
+```javascript
+import { Coach } from "./Coach";
+
+export class CricketCoach implements Coach {
+    getDailyWorkout(): string {
+        return "Practice your spin bowling technique.";
+    }
+}
+```
