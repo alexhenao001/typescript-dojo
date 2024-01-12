@@ -8,7 +8,7 @@
 ## Convert Javacript toy TypeScript
 ### Steps
 1. Download Typescript to already created React Project
-    * i.e.-
+    * in the root directory of the react project download with the following code:
     ```
     npm install --save typescript @types/node @types/react @types/react-dom @types/jest
     ```
