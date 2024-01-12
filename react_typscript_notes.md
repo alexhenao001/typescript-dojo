@@ -8,7 +8,10 @@
 ## Convert Javacript toy TypeScript
 ### Steps
 1. Download Typescript to already created React Project
-    ```npm install --save typescript @types/node @types/react @types/react-dom @types/jest```
+    * code:
+    ```
+    npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+    ```
 2. Create a tsconfig file
 3. Add types to each param and variable
 
